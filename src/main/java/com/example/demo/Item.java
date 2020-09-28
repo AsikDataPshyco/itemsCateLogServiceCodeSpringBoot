@@ -16,18 +16,18 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @Entity
-public class Item {
+class Item {
 
     public Item(String name) {
-		super();		
+		//super();		
 		this.name = name;
 	}
 
 	@Id
     @GeneratedValue
-    private Long id;
+    public Long id;
 
-    private String name;
+    public String name;
     
-    protected Item(){}
+    public Item(){}
 }
